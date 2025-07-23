@@ -1,0 +1,39 @@
+.logos-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f8f8;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    margin-bottom: 80px;
+    height: 100px; 
+  }
+  
+  .logos-slide {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 40px;
+    animation: scroll 35s linear infinite;
+    min-width: 100%; 
+  }
+  
+  .logos-slide img {
+    height: 80px;
+    width: auto;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos-container {
+  background-color: #ff0000; 
+}

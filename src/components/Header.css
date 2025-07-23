@@ -1,0 +1,132 @@
+header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+}
+
+header .logo img {
+  width: 60px; 
+  height: auto;
+}
+
+header .company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+header .company-name span {
+  color: #00aaba;
+}
+
+/* Redes sociales */
+header .social-icons a {
+  font-size: 1.8rem; 
+  color: rgb(78, 78, 78);
+  transition: color 0.3s;
+}
+
+header .social-icons a:hover {
+  color: #00aaba;
+}
+
+/* Boton principal */
+header .cta-button {
+  padding: 12px 16px;
+  background-color: #00aaba;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background-color 0.3s;
+}
+
+header .cta-button:hover {
+  background-color: #01757f;
+}
+
+/* Boton secundario */
+header .atc-button{
+  padding: 12px 16px;
+  background-color: transparent;
+  color: rgb(133, 133, 133);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: background-color 0.3s;
+}
+
+header .atc-button:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+header .container-button {
+  display: flex; 
+  gap: 10px;     
+}
+
+.header-icon {
+  font-size: 24px; 
+  color: #00AABA; 
+  margin-bottom: 5px; 
+}
+
+/* @media (max-width: 1024px) {
+  header .container-button {
+    display: none;
+  }
+} */
+/* Versión mobile: columna + ancho máximo */
+@media (max-width: 768px) {
+  header .container-button {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    row-gap: 12px; /* separación vertical entre botones */
+  }
+
+  header .container-button button,
+  header .container-button a {
+    display: inline-block;
+    min-width: 180px;   /* más chico */
+    max-width: 180px;   /* más chico */
+    width: 100%;
+    text-align: center;
+  }
+
+    header .container-button button,
+  header .container-button a {
+    width: 160px; /* ancho fijo para todos */
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+  header .container-button {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* 👈 aumenta separación con logo/texto */
+    row-gap: 12px;
+  }
+
+  header .container-button button,
+  header .container-button a {
+    min-width: 160px;
+    max-width: 160px;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .atc-button {
+    background-color: #e0e0e0;
+  }
+
+  header .logo {
+    display: none;
+  }
+}

@@ -1,0 +1,76 @@
+.local-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .local-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .local-image-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .local-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* LOCAL CARD MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .local-card {
+    width: 180px;
+    padding: 30px;
+  }
+
+  .local-image-placeholder {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+@media (max-width: 768px) {
+   .local-card {
+    width: 100%;  
+    padding: 20px;
+    margin: 0;
+  }
+
+  .local-image-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+  
+
+
+/* Celulares chicos */
+@media (max-width: 480px) {
+  .local-card {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0;
+  }
+
+  .local-image-placeholder {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,39 @@
+.freq-quest {
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.016);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.freq-quest:hover {
+    background-color: #f9f9f9; 
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: black;
+}
+
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.answer.open {
+    max-height: 200px; 
+    opacity: 1;
+    margin-top: 20px;
+}
